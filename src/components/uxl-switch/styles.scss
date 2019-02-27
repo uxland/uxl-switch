@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 200px;
+
+  .option {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    padding: 8px;
+
+    &__active {
+      &.selected {
+        background-color: green;
+        color: white;
+      }
+    }
+
+    &__inactive {
+      &.selected {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+}
