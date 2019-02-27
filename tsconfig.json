@@ -22,13 +22,7 @@
     "paths": {
       "tslib": ["node_modules/tslib/tslib.d.ts"]
     }
-  }
-  // "include": [
-  //   "src/**/*",
-  //   "test/**/*"
-  // ],
-  // "exclude": [
-  //   "node_modules",
-  //   "es"
-  // ]
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "es"]
 }
