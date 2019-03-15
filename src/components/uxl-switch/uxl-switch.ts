@@ -16,17 +16,18 @@ export class UxlSwitch extends LitElement {
 
   @property()
   public enabled: boolean = true;
-  public render() {
-    return html`
-      ${template(this)}
-    `;
-  }
 
   @listen("click", ".wrapper")
   public _onClick(e) {
     if (this.enabled) {
       this.active = !this.active;
     }
+  }
+
+  public render() {
+    return html`
+      ${template(this)}
+    `;
   }
 
   static get styles() {

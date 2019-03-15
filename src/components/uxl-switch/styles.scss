@@ -16,7 +16,7 @@
     &__active {
       &.selected {
         background-color: var(--uxl-switch-active-selected-background-color, #81c784);
-        color: var(--uxl-switch-selected-text-color, white);
+        color: var(--uxl-switch-selected-text-color, #ffffff);
       }
     }
 
