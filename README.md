@@ -2,7 +2,7 @@
 
 ##### What is?
 
-It is a component that allows you to create a toggle switch input.
+It is a web component that allows you to create a toggle switch input.
 
 ##### How Install
 
@@ -26,7 +26,7 @@ import "@uxland/uxl-switch";
 
 | Attribute      | Description                                                                        | Default               |
 | -------------- | ---------------------------------------------------------------------------------- | --------------------- |
-| `active`       | The value of the switch                                                            | `false` (boolean)     |
+| `active`       | Status of the switch                                                               | `false` (boolean)     |
 | `activeName`   | Value of active text label                                                         | `"Active"` (string)   |
 | `inactiveName` | Value of inactive text label                                                       | `"Inactive"` (string) |
 | `enabled`      | If true, the uxl-switch is enable to change, otherwhise the uxl-switch is disabled | `true` (boolean)      |
@@ -45,7 +45,3 @@ The following custom properties and mixins are available for styling:
 | `--uxl-switch-active-selected-background-color`   | Background color of active option when is selected   | `#81c784` |
 | `--uxl-switch-inactive-selected-background-color` | Background color of inactive option when is selected | `#ef5350` |
 | `--uxl-switch-selected-text-color`                | Text when any option is selected                     | `#ffffff` |
-
-```
-
-```
