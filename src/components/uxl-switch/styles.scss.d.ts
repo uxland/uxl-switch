@@ -4,6 +4,7 @@ export interface IStylesScss {
   'option__active': string;
   'selected': string;
   'option__inactive': string;
+  'disabled': string;
 }
 
 export const locals: IStylesScss;

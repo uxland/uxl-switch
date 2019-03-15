@@ -1,40 +1,37 @@
-import { html, LitElement, property, customElement, query, css, unsafeCSS } from "lit-element";
+import { listen } from "@uxland/uxl-utilities";
+import { css, customElement, html, LitElement, property, query, unsafeCSS } from "lit-element";
 import * as styles from "./styles.scss";
 import { template } from "./template";
-import { listen } from "@uxland/uxl-utilities";
 
 @customElement("uxl-switch")
 export class UxlSwitch extends LitElement {
-  render() {
+  @property()
+  public active: boolean = false;
+
+  @property()
+  public activeName: string = "Active";
+
+  @property()
+  public inactiveName: string = "Inactive";
+
+  @property()
+  public enabled: boolean = true;
+  public render() {
     return html`
       ${template(this)}
     `;
+  }
+
+  @listen("click", ".wrapper")
+  public _onClick(e) {
+    if (this.enabled) {
+      this.active = !this.active;
+    }
   }
 
   static get styles() {
     return css`
       ${unsafeCSS(styles)}
     `;
-  }
-
-  @property()
-  active: boolean = false;
-
-  @property()
-  activeName: string = "Active";
-
-  @property()
-  inactiveName: string = "Inactive";
-
-  @property()
-  enabled: boolean = true;
-
-  @listen("click", ".wrapper")
-  _onClick(e) {
-    console.log("on click!!!");
-    if (this.enabled) {
-      this.active = !this.active;
-      console.log("this.active", this.active);
-    }
   }
 }
