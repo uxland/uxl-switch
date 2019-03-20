@@ -37,8 +37,9 @@ The following custom properties and mixins are available for styling:
 
 | Custom property                                   | Description                                          | Default   |
 | ------------------------------------------------- | ---------------------------------------------------- | --------- |
-| `--uxl-tile-view-background-color`                | The background color of the tile view minimized      | `white`   |
+| `--uxl-switch-width`                              | Width of the uxl-switch                              | `200px`   |
 | `--uxl-switch-border-color`                       | Border color of component wrapper                    | `#e0e0e0` |
+| `--uxl-switch-option-background-color`            | Background color of the options                      | `#ffffff` |
 | `--uxl-switch-option-padding`                     | Padding of the options                               | `8px`     |
 | `--uxl-switch-text-color`                         | Default text color when option is not selected       | `#616161` |
 | `--uxl-switch-font-size`                          | Font size of text options                            | `16px`    |

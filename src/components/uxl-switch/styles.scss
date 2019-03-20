@@ -3,7 +3,7 @@
   flex-direction: row;
   border: 1px solid var(--uxl-switch-border-color, #e0e0e0);
   border-radius: 4px;
-  width: 200px;
+  width: var(--uxl-switch-width, 200px);
 
   .option {
     display: flex;
@@ -12,6 +12,7 @@
     padding: var(--uxl-switch-option-padding, 8px);
     color: var(--uxl-switch-text-color, #616161);
     font-size: var(--uxl-switch-font-size, 16px);
+    background-color: var(--uxl-switch-option-background-color, #ffffff);
 
     &__active {
       &.selected {
