@@ -21,6 +21,8 @@ export class UxlSwitch extends LitElement {
   public _onClick(e) {
     if (this.enabled) {
       this.active = !this.active;
+      const onChangeEvent = new CustomEvent("uxl-switch-changed", { composed: true, detail: { active: this.active } });
+      this.dispatchEvent(onChangeEvent);
     }
   }
 
