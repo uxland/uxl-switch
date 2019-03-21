@@ -46,3 +46,9 @@ The following custom properties and mixins are available for styling:
 | `--uxl-switch-active-selected-background-color`   | Background color of active option when is selected   | `#81c784` |
 | `--uxl-switch-inactive-selected-background-color` | Background color of inactive option when is selected | `#ef5350` |
 | `--uxl-switch-selected-text-color`                | Text when any option is selected                     | `#ffffff` |
+
+### Events
+
+| Events               | Description   |
+| -------------------- | ------------- |
+| `uxl-switch-changed` | Value changed |
