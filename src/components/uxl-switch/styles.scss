@@ -16,16 +16,22 @@
     background-color: var(--uxl-switch-option-background-color, #ffffff);
 
     &__active {
+      border: var(--uxl-switch-active-border, 0);
+
       &.selected {
         background-color: var(--uxl-switch-active-selected-background-color, #81c784);
         color: var(--uxl-switch-selected-text-color, #ffffff);
+        border: var(--uxl-switch-active-border-selected, 0);
       }
     }
 
     &__inactive {
+      border: var(--uxl-switch-inactive-border, 0);
+
       &.selected {
         background-color: var(--uxl-switch-inactive-selected-background-color, #ef5350);
         color: var(--uxl-switch-selected-text-color, white);
+        border: var(--uxl-switch-inactive-border-selected, 0);
       }
     }
   }

@@ -46,6 +46,11 @@ The following custom properties and mixins are available for styling:
 | `--uxl-switch-active-selected-background-color`   | Background color of active option when is selected   | `#81c784` |
 | `--uxl-switch-inactive-selected-background-color` | Background color of inactive option when is selected | `#ef5350` |
 | `--uxl-switch-selected-text-color`                | Text when any option is selected                     | `#ffffff` |
+| `--uxl-switch-active-border`                      | Border of active option                              | `0` |
+| `--uxl-switch-active-border-selected`             | Border of active option when is selected             | `0` |
+| `--uxl-switch-inactive-border`                    | Border of inactive option                            | `0` |
+| `--uxl-switch-inactive-border-selected`           | Border of active option when is selected             | `0` |
+
 
 ### Events
 
