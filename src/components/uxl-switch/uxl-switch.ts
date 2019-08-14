@@ -1,6 +1,5 @@
-import { listen } from "@uxland/uxl-utilities";
 import { css, customElement, html, LitElement, property, query, unsafeCSS } from "lit-element";
-import * as styles from "./styles.scss";
+import styles from "./styles.scss";
 import { template } from "./template";
 
 @customElement("uxl-switch")
@@ -17,7 +16,6 @@ export class UxlSwitch extends LitElement {
   @property()
   public enabled: boolean = true;
 
-  @listen("click", ".wrapper")
   public _onClick(e) {
     if (this.enabled) {
       this.active = !this.active;
