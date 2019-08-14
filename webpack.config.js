@@ -131,10 +131,7 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              sourceMap: true,
-              data: `
-                  @import "@eug/app/lib/theme/eug-theme.scss";
-              `
+              sourceMap: true
             }
           }
         ]
